@@ -61,3 +61,5 @@ Traceback (most recent call last):
     if pwhash.count("$") < 2:
 AttributeError: 'NoneType' object has no attribute 'count'
 2022-07-07 23:16:33,812 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
+2022-07-07 23:28:28,214 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
+2022-07-07 23:49:39,367 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
