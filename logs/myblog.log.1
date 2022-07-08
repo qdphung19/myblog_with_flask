@@ -1,0 +1,108 @@
+2022-07-06 21:51:28,409 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
+2022-07-06 21:52:02,431 ERROR: Exception on /login [POST] [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\routes.py", line 57, in login
+    if user is None or not user.check_password(form.password.data):
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\models.py", line 21, in check_password
+    return check_password_hash(self.password_hash, password)
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\werkzeug\security.py", line 103, in check_password_hash
+    if pwhash.count("$") < 2:
+AttributeError: 'NoneType' object has no attribute 'count'
+2022-07-07 20:43:33,708 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
+2022-07-07 20:49:19,970 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
+2022-07-07 20:49:27,263 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
+2022-07-07 21:28:38,235 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
+2022-07-07 21:29:26,435 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
+2022-07-07 21:33:53,684 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
+2022-07-07 21:40:10,192 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
+2022-07-07 21:50:40,489 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
+2022-07-07 21:51:37,467 ERROR: Exception on /login [POST] [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\routes.py", line 75, in login
+    if user is None or not user.check_password(form.password.data):
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\models.py", line 30, in check_password
+    return check_password_hash(self.password_hash, password)
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\werkzeug\security.py", line 103, in check_password_hash
+    if pwhash.count("$") < 2:
+AttributeError: 'NoneType' object has no attribute 'count'
+2022-07-07 22:42:40,291 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
+2022-07-07 22:45:39,959 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
+2022-07-07 22:49:58,707 ERROR: Exception on /login [POST] [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\routes.py", line 75, in login
+    if user is None or not user.check_password(form.password.data):
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\models.py", line 30, in check_password
+    return check_password_hash(self.password_hash, password)
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\werkzeug\security.py", line 103, in check_password_hash
+    if pwhash.count("$") < 2:
+AttributeError: 'NoneType' object has no attribute 'count'
+2022-07-07 23:16:33,812 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
+2022-07-07 23:28:28,214 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
+2022-07-07 23:49:39,367 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
+2022-07-08 00:04:17,445 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
+2022-07-08 10:45:36,055 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
+2022-07-08 11:12:52,707 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:45]
+2022-07-08 11:18:25,075 ERROR: Exception on /reset_password_request [POST] [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\routes.py", line 187, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\email.py", line 14, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\models.py", line 65, in get_reset_password_token
+    app.config['SECRET_KEY'], algorithm='HS256').decode('utf-8')
+AttributeError: 'str' object has no attribute 'decode'
+2022-07-08 11:18:37,179 ERROR: Exception on /reset_password_request [POST] [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\routes.py", line 187, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\email.py", line 14, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\models.py", line 65, in get_reset_password_token
+    app.config['SECRET_KEY'], algorithm='HS256').decode('utf-8')
+AttributeError: 'str' object has no attribute 'decode'
+2022-07-08 11:53:47,035 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:47]
+2022-07-08 11:55:46,103 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:47]
+2022-07-08 12:12:15,359 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:47]
+2022-07-08 12:42:04,791 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:47]
+2022-07-08 12:53:53,356 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:47]
+2022-07-08 12:56:21,508 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:47]
