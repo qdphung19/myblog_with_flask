@@ -63,3 +63,43 @@ AttributeError: 'NoneType' object has no attribute 'count'
 2022-07-07 23:16:33,812 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
 2022-07-07 23:28:28,214 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
 2022-07-07 23:49:39,367 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
+2022-07-08 00:04:17,445 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
+2022-07-08 10:45:36,055 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:43]
+2022-07-08 11:12:52,707 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:45]
+2022-07-08 11:18:25,075 ERROR: Exception on /reset_password_request [POST] [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\routes.py", line 187, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\email.py", line 14, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\models.py", line 65, in get_reset_password_token
+    app.config['SECRET_KEY'], algorithm='HS256').decode('utf-8')
+AttributeError: 'str' object has no attribute 'decode'
+2022-07-08 11:18:37,179 ERROR: Exception on /reset_password_request [POST] [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\myenv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\routes.py", line 187, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\email.py", line 14, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\models.py", line 65, in get_reset_password_token
+    app.config['SECRET_KEY'], algorithm='HS256').decode('utf-8')
+AttributeError: 'str' object has no attribute 'decode'
+2022-07-08 11:53:47,035 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:47]
+2022-07-08 11:55:46,103 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:47]
+2022-07-08 12:12:15,359 INFO: Myblog startup [in C:\Users\qdphu\OneDrive\Documents\Workspace\myblog\app\__init__.py:47]
